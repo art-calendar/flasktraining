@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- scales the size -->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- main css that decide how the website should be displayed visually -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- imports google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar"> <!-- navbar class (notice class is not unique unlike id) -->
+        <ul>
+            <li><a href="#home">Home</a></li> <!-- note that the '#' scrolls to the correct location -->
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>           
+        </ul>
+    </nav>
+
+    <!-- Home page -->
+    <!-- note that section is used instead of div.  section in general carries a common theme -->
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Timothy<br>'Cumulonimbus' Kwok</h1>
+            <button class="btn">Click & Donate</button> <!-- note this button doesn't lead anywhere yet -->
+        </div>
+    </section>
+
+    <!-- about page -->
+    <section id="about">
+        <h1 class="headings">About Me</h1>
+        <div id="pic">
+            <img src="images/ski.jpeg" alt="">
+            <div id="intro">
+                <h2>Tim Kwok</h2>
+                <p>  Hi everyone, this is Timothy.  Feel free to call me Tim.  I am from Canada and got my Computer Sciense degree when dinosaurs roamed.  However that does not make me a seasoned programmer, just makes me outdated.  When I learned about HTML, there wasn't even HTML5.  As a result, everything is new to me and I am learning from scratch.  Long story short, I am here to learn from the best.
+                </p>
+            </div>
+      </div>
+    </section>
+
+    <!-- interest page -->
+    <section id="interest">
+        <h1 class="headings">Interest</h1>
+        <div class="gallery">
+            <!-- same as image at the main page. but this time it list 6 images and have css dictate its late out. -->
+            <img src="images/movie.jpeg" alt="">
+            <img src="images/home.jpeg" alt="">
+            <img src="images/team.png" alt="">
+            <img src="images/mine.jpeg" alt="">
+            <img src="images/company.png" alt="">
+            <img src="images/sponge.png" alt="">
+        </div>
+    </section>
+
+    <!-- skill page -->
+    <section id="skill">
+        <h1 class='headings'>Skill</h1>
+        <div class="row">
+            <div class="box">
+                <h1 class="headings">Programming</h1>
+                <p>
+                    <li>Python(re-learning again)</li> <!-- 'li' tag to give the list a few dots.  Givs the reader a sense of a list -->
+                    <li>HTML and CSS (very little)</li>
+                    <li>C++ and C (very little)</li>
+                </p>
+            </div>
+            <div class="box">
+                <h1 class="headings">Special Ability</h1>
+                <p>
+                    <li>Can put up with my 3 year old son</li>
+                    <li>Can survive on pure McDonalds for a week</li>
+                    <li>Roll down a mountain on skis with minimal damage</li>
+                    <li>Python</li>
+                </p>
+            </div>            <div class="box">
+                <h1 class="headings">Certification</h1>
+                <p>
+                    <li>Preface M1 DS (waiting for CS to print me one)</li>
+                    <li>Preface M2 DS (waiting for CS to print me one)</li>
+                    <li>Level one Ski instructor</li>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact page -->
+    <!-- forms are not connected to anything yet at the moment -->
+    <section id="contact">
+        <h1 class="headings">Contact</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+</body>
+</html>
