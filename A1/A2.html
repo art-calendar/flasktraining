@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<title>Help Steve dig up some goodies</title>
+	<style>
+		body {
+			background-image: url("1.jpg");
+			background-size: cover;
+		}
+
+		.white-font{
+			color: white;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body class="white-font">
+	<div class="container">
+		<h1 class="text-center">Help Steve dig up some goodies!</h1>
+		<div class="container">
+			<p>Steve is a hard working dude.  He deserves better than minimum wage.  Can you help Steve identify what he is digging up?</p>
+			<img id="rotateimage"> <!-- runs action from script to randomize the image every time. -->
+			<h3 style="color: #66ff66" id = 'correct_word'></h3>
+			<div id="keyboard"></div><br> <!-- keyboard id given to div tag, but with no content inside.  they will be filled in from script inorder to make it dynamic. -->
+			<button class="btn btn-success" onclick= "restart()">Try Again</button><br> <!-- onclick run restart from script -->
+
+			<br>
+
+		</div>
+	</div>
+		<script src = 'script.js'></script> <!-- identify which script to run -->
+</body>
+
+
+</html>
